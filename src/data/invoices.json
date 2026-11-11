@@ -1,0 +1,542 @@
+[
+  {
+    "kind": "completa",
+    "input": "IMPRENTA RÁPIDA FICTICIA\nRUC: 1745275912001\nDirección matriz: Calle Larga 7-80, Cuenca\n\nFACTURA No. 001-001-000063170\nFecha de emisión: 9 de agosto de 2026\n\nCliente: Lucía Espinoza Figueroa\nC.I.: 0994831310\n\nCant.  Descripción                          P. unit.     Total\n   7   Servicio de asesoría contable (h)       $ 25,00   $ 175,00\n  11   Tóner de impresora                      $ 38,90   $ 427,90\n   4   Caja de tornillos                        $ 3,10    $ 12,40\n   5   Cable UTP categoría 6 (m)                $ 0,85     $ 4,25\n\nSubtotal 15 %: $ 619,55\nIVA 15 %: $ 92,93\nVALOR TOTAL: $ 712,48\nForma de pago: tarjeta de crédito",
+    "expected": {
+      "numero_factura": "001-001-000063170",
+      "fecha_emision": "2026-08-09",
+      "ruc_emisor": "1745275912001",
+      "razon_social_emisor": "Imprenta Rápida Ficticia",
+      "identificacion_comprador": "0994831310",
+      "nombre_comprador": "Lucía Espinoza Figueroa",
+      "subtotal": 619.55,
+      "iva": 92.93,
+      "total": 712.48,
+      "forma_pago": "tarjeta de crédito"
+    },
+    "split": "ajuste",
+    "code": "F01"
+  },
+  {
+    "kind": "completa",
+    "input": "IMPRENTA RÁPIDA FICTICIA\nRUC: 1723226527001\nDirección matriz: Calle Larga 7-80, Cuenca\n\nFACTURA No. 002-002-000092303\nFecha de emisión: 22 de julio de 2026\n\nCliente: Carmen Andrade Cárdenas\nRUC: 1776214066001\n\nCant.  Descripción                          P. unit.     Total\n  12   Servicio de asesoría contable (h)       $ 25.00   $ 300.00\n\nSubtotal 15 %: $ 300.00\nIVA 15 %: $ 45.00\nVALOR TOTAL: $ 345.00\nForma de pago: transferencia bancaria",
+    "expected": {
+      "numero_factura": "002-002-000092303",
+      "fecha_emision": "2026-07-22",
+      "ruc_emisor": "1723226527001",
+      "razon_social_emisor": "Imprenta Rápida Ficticia",
+      "identificacion_comprador": "1776214066001",
+      "nombre_comprador": "Carmen Andrade Cárdenas",
+      "subtotal": 300.0,
+      "iva": 45.0,
+      "total": 345.0,
+      "forma_pago": "transferencia bancaria"
+    },
+    "split": "ajuste",
+    "code": "F02"
+  },
+  {
+    "kind": "completa",
+    "input": "IMPRENTA RÁPIDA FICTICIA\nRUC: 1757643035001\nDirección matriz: Calle Larga 7-80, Cuenca\n\nFACTURA No. 003-004-000036193\nFecha de emisión: 22 de enero de 2026\n\nCliente: Andrés Loor Cárdenas\nRUC: 1762894168001\n\nCant.  Descripción                          P. unit.     Total\n   1   Saco de fertilizante 50 kg              $ 31.20    $ 31.20\n   2   Teclado inalámbrico                     $ 18.60    $ 37.20\n  11   Pan integral                             $ 1.35    $ 14.85\n\nSubtotal 15 %: $ 83.25\nIVA 15 %: $ 12.49\nVALOR TOTAL: $ 95.74\nForma de pago: efectivo",
+    "expected": {
+      "numero_factura": "003-004-000036193",
+      "fecha_emision": "2026-01-22",
+      "ruc_emisor": "1757643035001",
+      "razon_social_emisor": "Imprenta Rápida Ficticia",
+      "identificacion_comprador": "1762894168001",
+      "nombre_comprador": "Andrés Loor Cárdenas",
+      "subtotal": 83.25,
+      "iva": 12.49,
+      "total": 95.74,
+      "forma_pago": "efectivo"
+    },
+    "split": "ajuste",
+    "code": "F03"
+  },
+  {
+    "kind": "completa",
+    "input": "DISTRIBUIDORA PACÍFICO DEMO CÍA. LTDA.\nRUC: 1741272841001\nDirección matriz: Av. 9 de Octubre 1820, Guayaquil\n\nFACTURA No. 003-004-000088362\nFecha de emisión: 28/03/2026\n\nCliente: Paola Jaramillo Ortega\nC.I.: 0941689962\n\nCant.  Descripción                          P. unit.     Total\n  12   Servicio de asesoría contable (h)       $ 25,00   $ 300,00\n   9   Saco de fertilizante 50 kg              $ 31,20   $ 280,80\n  10   Martillo de acero                        $ 9,40    $ 94,00\n\nSubtotal 15 %: $ 674,80\nIVA 15 %: $ 101,22\nVALOR TOTAL: $ 776,02\nForma de pago: transferencia bancaria",
+    "expected": {
+      "numero_factura": "003-004-000088362",
+      "fecha_emision": "2026-03-28",
+      "ruc_emisor": "1741272841001",
+      "razon_social_emisor": "Distribuidora Pacífico Demo Cía. Ltda.",
+      "identificacion_comprador": "0941689962",
+      "nombre_comprador": "Paola Jaramillo Ortega",
+      "subtotal": 674.8,
+      "iva": 101.22,
+      "total": 776.02,
+      "forma_pago": "transferencia bancaria"
+    },
+    "split": "ajuste",
+    "code": "F04"
+  },
+  {
+    "kind": "completa",
+    "input": "FERRETERÍA LOS ANDES FICTICIA S.A.\nRUC: 1758023689001\nDirección matriz: Av. 10 de Agosto N24-15, Quito\n\nFACTURA No. 003-001-000093025\nFecha de emisión: 06/05/2026\n\nCliente: Santiago Mendoza Herrera\nRUC: 1781644309001\n\nCant.  Descripción                          P. unit.     Total\n  10   Martillo de acero                        $ 9,40    $ 94,00\n\nSubtotal 15 %: $ 94,00\nIVA 15 %: $ 14,10\nVALOR TOTAL: $ 108,10\nForma de pago: transferencia bancaria",
+    "expected": {
+      "numero_factura": "003-001-000093025",
+      "fecha_emision": "2026-05-06",
+      "ruc_emisor": "1758023689001",
+      "razon_social_emisor": "Ferretería Los Andes Ficticia S.A.",
+      "identificacion_comprador": "1781644309001",
+      "nombre_comprador": "Santiago Mendoza Herrera",
+      "subtotal": 94.0,
+      "iva": 14.1,
+      "total": 108.1,
+      "forma_pago": "transferencia bancaria"
+    },
+    "split": "ajuste",
+    "code": "F05"
+  },
+  {
+    "kind": "completa",
+    "input": "IMPRENTA RÁPIDA FICTICIA\nRUC: 1739383527001\nDirección matriz: Calle Larga 7-80, Cuenca\n\nFACTURA No. 002-004-000048351\nFecha de emisión: 2026-10-17\n\nCliente: Diego Cárdenas Jaramillo\nRUC: 1770647904001\n\nCant.  Descripción                          P. unit.     Total\n   4   Resma de papel A4                        $ 4.75    $ 19.00\n   5   Martillo de acero                        $ 9.40    $ 47.00\n\nSubtotal 15 %: $ 66.00\nIVA 15 %: $ 9.90\nVALOR TOTAL: $ 75.90\nForma de pago: tarjeta de crédito",
+    "expected": {
+      "numero_factura": "002-004-000048351",
+      "fecha_emision": "2026-10-17",
+      "ruc_emisor": "1739383527001",
+      "razon_social_emisor": "Imprenta Rápida Ficticia",
+      "identificacion_comprador": "1770647904001",
+      "nombre_comprador": "Diego Cárdenas Jaramillo",
+      "subtotal": 66.0,
+      "iva": 9.9,
+      "total": 75.9,
+      "forma_pago": "tarjeta de crédito"
+    },
+    "split": "ajuste",
+    "code": "F06"
+  },
+  {
+    "kind": "completa",
+    "input": "SERVICIOS CONTABLES MODELO S.A.\nRUC: 1780952386001\nDirección matriz: Av. Amazonas N33-120, Quito\n\nFACTURA No. 001-002-000016897\nFecha de emisión: 2026-06-16\n\nCliente: Andrés Cárdenas Ortega\nC.I.: 0934184260\n\nCant.  Descripción                          P. unit.     Total\n   6   Resma de papel A4                        $ 4,75    $ 28,50\n   6   Martillo de acero                        $ 9,40    $ 56,40\n\nSubtotal 15 %: $ 84,90\nIVA 15 %: $ 12,74\nVALOR TOTAL: $ 97,64\nForma de pago: transferencia bancaria",
+    "expected": {
+      "numero_factura": "001-002-000016897",
+      "fecha_emision": "2026-06-16",
+      "ruc_emisor": "1780952386001",
+      "razon_social_emisor": "Servicios Contables Modelo S.A.",
+      "identificacion_comprador": "0934184260",
+      "nombre_comprador": "Andrés Cárdenas Ortega",
+      "subtotal": 84.9,
+      "iva": 12.74,
+      "total": 97.64,
+      "forma_pago": "transferencia bancaria"
+    },
+    "split": "ajuste",
+    "code": "F07"
+  },
+  {
+    "kind": "completa",
+    "input": "FERRETERÍA LOS ANDES FICTICIA S.A.\nRUC: 1777458019001\nDirección matriz: Av. 10 de Agosto N24-15, Quito\n\nFACTURA No. 002-002-000012349\nFecha de emisión: 2026-09-21\n\nCliente: Diego Delgado Espinoza\nRUC: 1725332774001\n\nCant.  Descripción                          P. unit.     Total\n   5   Saco de fertilizante 50 kg              $ 31.20   $ 156.00\n  12   Martillo de acero                        $ 9.40   $ 112.80\n  10   Caja de tornillos                        $ 3.10    $ 31.00\n  11   Cable UTP categoría 6 (m)                $ 0.85     $ 9.35\n\nSubtotal 15 %: $ 309.15\nIVA 15 %: $ 46.37\nVALOR TOTAL: $ 355.52\nForma de pago: efectivo",
+    "expected": {
+      "numero_factura": "002-002-000012349",
+      "fecha_emision": "2026-09-21",
+      "ruc_emisor": "1777458019001",
+      "razon_social_emisor": "Ferretería Los Andes Ficticia S.A.",
+      "identificacion_comprador": "1725332774001",
+      "nombre_comprador": "Diego Delgado Espinoza",
+      "subtotal": 309.15,
+      "iva": 46.37,
+      "total": 355.52,
+      "forma_pago": "efectivo"
+    },
+    "split": "prueba",
+    "code": "F08"
+  },
+  {
+    "kind": "completa",
+    "input": "TECNOSUR EJEMPLO S.A.S.\nRUC: 1727978756001\nDirección matriz: Av. Universitaria 08-12, Loja\n\nFACTURA No. 003-005-000093395\nFecha de emisión: 07/02/2026\n\nCliente: Carmen Espinoza Loor\nRUC: 1765692970001\n\nCant.  Descripción                          P. unit.     Total\n   5   Servicio de asesoría contable (h)       $ 25.00   $ 125.00\n  10   Saco de fertilizante 50 kg              $ 31.20   $ 312.00\n   6   Resma de papel A4                        $ 4.75    $ 28.50\n  10   Tóner de impresora                      $ 38.90   $ 389.00\n\nSubtotal 15 %: $ 854.50\nIVA 15 %: $ 128.17\nVALOR TOTAL: $ 982.67\nForma de pago: efectivo",
+    "expected": {
+      "numero_factura": "003-005-000093395",
+      "fecha_emision": "2026-02-07",
+      "ruc_emisor": "1727978756001",
+      "razon_social_emisor": "Tecnosur Ejemplo S.A.S.",
+      "identificacion_comprador": "1765692970001",
+      "nombre_comprador": "Carmen Espinoza Loor",
+      "subtotal": 854.5,
+      "iva": 128.17,
+      "total": 982.67,
+      "forma_pago": "efectivo"
+    },
+    "split": "prueba",
+    "code": "F09"
+  },
+  {
+    "kind": "completa",
+    "input": "IMPRENTA RÁPIDA FICTICIA\nRUC: 1772749273001\nDirección matriz: Calle Larga 7-80, Cuenca\n\nFACTURA No. 003-004-000017576\nFecha de emisión: 17/10/2026\n\nCliente: Carmen Mendoza Jaramillo\nC.I.: 0997049766\n\nCant.  Descripción                          P. unit.     Total\n   3   Servicio de asesoría contable (h)       $ 25,00    $ 75,00\n\nSubtotal 15 %: $ 75,00\nIVA 15 %: $ 11,25\nVALOR TOTAL: $ 86,25\nForma de pago: tarjeta de débito",
+    "expected": {
+      "numero_factura": "003-004-000017576",
+      "fecha_emision": "2026-10-17",
+      "ruc_emisor": "1772749273001",
+      "razon_social_emisor": "Imprenta Rápida Ficticia",
+      "identificacion_comprador": "0997049766",
+      "nombre_comprador": "Carmen Mendoza Jaramillo",
+      "subtotal": 75.0,
+      "iva": 11.25,
+      "total": 86.25,
+      "forma_pago": "tarjeta de débito"
+    },
+    "split": "prueba",
+    "code": "F10"
+  },
+  {
+    "kind": "completa",
+    "input": "TECNOSUR EJEMPLO S.A.S.\nRUC: 1713819002001\nDirección matriz: Av. Universitaria 08-12, Loja\n\nFACTURA No. 003-002-000044805\nFecha de emisión: 13/08/2026\n\nCliente: María Guerrero Benítez\nRUC: 1796609608001\n\nCant.  Descripción                          P. unit.     Total\n   3   Tóner de impresora                      $ 38.90   $ 116.70\n   4   Teclado inalámbrico                     $ 18.60    $ 74.40\n  10   Servicio de asesoría contable (h)       $ 25.00   $ 250.00\n\nSubtotal 15 %: $ 441.10\nIVA 15 %: $ 66.17\nVALOR TOTAL: $ 507.27\nForma de pago: tarjeta de débito",
+    "expected": {
+      "numero_factura": "003-002-000044805",
+      "fecha_emision": "2026-08-13",
+      "ruc_emisor": "1713819002001",
+      "razon_social_emisor": "Tecnosur Ejemplo S.A.S.",
+      "identificacion_comprador": "1796609608001",
+      "nombre_comprador": "María Guerrero Benítez",
+      "subtotal": 441.1,
+      "iva": 66.17,
+      "total": 507.27,
+      "forma_pago": "tarjeta de débito"
+    },
+    "split": "prueba",
+    "code": "F11"
+  },
+  {
+    "kind": "completa",
+    "input": "AGROINSUMOS VALLE VERDE DEMO\nRUC: 1749187512001\nDirección matriz: Vía a Daule km 7, Guayaquil\n\nFACTURA No. 002-001-000016434\nFecha de emisión: 18/05/2026\n\nCliente: Valeria Delgado Guerrero\nC.I.: 0944436343\n\nCant.  Descripción                          P. unit.     Total\n   2   Pan integral                             $ 1,35     $ 2,70\n  10   Impresión a color (ciento)              $ 12,00   $ 120,00\n   1   Tóner de impresora                      $ 38,90    $ 38,90\n  10   Resma de papel A4                        $ 4,75    $ 47,50\n\nSubtotal 15 %: $ 209,10\nIVA 15 %: $ 31,36\nVALOR TOTAL: $ 240,46\nForma de pago: tarjeta de débito",
+    "expected": {
+      "numero_factura": "002-001-000016434",
+      "fecha_emision": "2026-05-18",
+      "ruc_emisor": "1749187512001",
+      "razon_social_emisor": "Agroinsumos Valle Verde Demo",
+      "identificacion_comprador": "0944436343",
+      "nombre_comprador": "Valeria Delgado Guerrero",
+      "subtotal": 209.1,
+      "iva": 31.36,
+      "total": 240.46,
+      "forma_pago": "tarjeta de débito"
+    },
+    "split": "prueba",
+    "code": "F12"
+  },
+  {
+    "kind": "completa",
+    "input": "PANADERÍA LA ESPIGA SINTÉTICA\nRUC: 1771557507001\nDirección matriz: Calle Sucre 214, Ambato\n\nFACTURA No. 003-004-000020646\nFecha de emisión: 2026-05-15\n\nCliente: Gabriela Andrade Loor\nC.I.: 0902707490\n\nCant.  Descripción                          P. unit.     Total\n   1   Impresión a color (ciento)              $ 12,00    $ 12,00\n  10   Resma de papel A4                        $ 4,75    $ 47,50\n   5   Pan integral                             $ 1,35     $ 6,75\n   1   Cable UTP categoría 6 (m)                $ 0,85     $ 0,85\n\nSubtotal 15 %: $ 67,10\nIVA 15 %: $ 10,06\nVALOR TOTAL: $ 77,16\nForma de pago: tarjeta de débito",
+    "expected": {
+      "numero_factura": "003-004-000020646",
+      "fecha_emision": "2026-05-15",
+      "ruc_emisor": "1771557507001",
+      "razon_social_emisor": "Panadería La Espiga Sintética",
+      "identificacion_comprador": "0902707490",
+      "nombre_comprador": "Gabriela Andrade Loor",
+      "subtotal": 67.1,
+      "iva": 10.06,
+      "total": 77.16,
+      "forma_pago": "tarjeta de débito"
+    },
+    "split": "prueba",
+    "code": "F13"
+  },
+  {
+    "kind": "completa",
+    "input": "TECNOSUR EJEMPLO S.A.S.\nRUC: 1706291225001\nDirección matriz: Av. Universitaria 08-12, Loja\n\nFACTURA No. 002-003-000036703\nFecha de emisión: 13/04/2026\n\nCliente: María Espinoza Benítez\nC.I.: 0981200591\n\nCant.  Descripción                          P. unit.     Total\n  11   Servicio de asesoría contable (h)       $ 25,00   $ 275,00\n\nSubtotal 15 %: $ 275,00\nIVA 15 %: $ 41,25\nVALOR TOTAL: $ 316,25\nForma de pago: tarjeta de crédito",
+    "expected": {
+      "numero_factura": "002-003-000036703",
+      "fecha_emision": "2026-04-13",
+      "ruc_emisor": "1706291225001",
+      "razon_social_emisor": "Tecnosur Ejemplo S.A.S.",
+      "identificacion_comprador": "0981200591",
+      "nombre_comprador": "María Espinoza Benítez",
+      "subtotal": 275.0,
+      "iva": 41.25,
+      "total": 316.25,
+      "forma_pago": "tarjeta de crédito"
+    },
+    "split": "prueba",
+    "code": "F14"
+  },
+  {
+    "kind": "completa",
+    "input": "AGROINSUMOS VALLE VERDE DEMO\nRUC: 1765546612001\nDirección matriz: Vía a Daule km 7, Guayaquil\n\nFACTURA No. 003-002-000053139\nFecha de emisión: 2026-05-05\n\nCliente: Diego Cárdenas Guerrero\nC.I.: 0952373688\n\nCant.  Descripción                          P. unit.     Total\n   6   Tóner de impresora                      $ 38.90   $ 233.40\n  10   Pan integral                             $ 1.35    $ 13.50\n  12   Cable UTP categoría 6 (m)                $ 0.85    $ 10.20\n\nSubtotal 15 %: $ 257.10\nIVA 15 %: $ 38.57\nVALOR TOTAL: $ 295.67\nForma de pago: tarjeta de crédito",
+    "expected": {
+      "numero_factura": "003-002-000053139",
+      "fecha_emision": "2026-05-05",
+      "ruc_emisor": "1765546612001",
+      "razon_social_emisor": "Agroinsumos Valle Verde Demo",
+      "identificacion_comprador": "0952373688",
+      "nombre_comprador": "Diego Cárdenas Guerrero",
+      "subtotal": 257.1,
+      "iva": 38.57,
+      "total": 295.67,
+      "forma_pago": "tarjeta de crédito"
+    },
+    "split": "prueba",
+    "code": "F15"
+  },
+  {
+    "kind": "completa",
+    "input": "IMPRENTA RÁPIDA FICTICIA\nRUC: 1713186239001\nDirección matriz: Calle Larga 7-80, Cuenca\n\nFACTURA No. 001-005-000006629\nFecha de emisión: 11/04/2026\n\nCliente: Valeria Herrera Delgado\nRUC: 1752006395001\n\nCant.  Descripción                          P. unit.     Total\n   4   Pan integral                             $ 1,35     $ 5,40\n  12   Teclado inalámbrico                     $ 18,60   $ 223,20\n   5   Resma de papel A4                        $ 4,75    $ 23,75\n   6   Tóner de impresora                      $ 38,90   $ 233,40\n\nSubtotal 15 %: $ 485,75\nIVA 15 %: $ 72,86\nVALOR TOTAL: $ 558,61\nForma de pago: efectivo",
+    "expected": {
+      "numero_factura": "001-005-000006629",
+      "fecha_emision": "2026-04-11",
+      "ruc_emisor": "1713186239001",
+      "razon_social_emisor": "Imprenta Rápida Ficticia",
+      "identificacion_comprador": "1752006395001",
+      "nombre_comprador": "Valeria Herrera Delgado",
+      "subtotal": 485.75,
+      "iva": 72.86,
+      "total": 558.61,
+      "forma_pago": "efectivo"
+    },
+    "split": "prueba",
+    "code": "F16"
+  },
+  {
+    "kind": "completa",
+    "input": "TECNOSUR EJEMPLO S.A.S.\nRUC: 1789868330001\nDirección matriz: Av. Universitaria 08-12, Loja\n\nFACTURA No. 001-002-000009261\nFecha de emisión: 2026-05-08\n\nCliente: Paola Delgado Espinoza\nRUC: 1702944055001\n\nCant.  Descripción                          P. unit.     Total\n   8   Resma de papel A4                        $ 4.75    $ 38.00\n   4   Cable UTP categoría 6 (m)                $ 0.85     $ 3.40\n   6   Tóner de impresora                      $ 38.90   $ 233.40\n   2   Impresión a color (ciento)              $ 12.00    $ 24.00\n\nSubtotal 15 %: $ 298.80\nIVA 15 %: $ 44.82\nVALOR TOTAL: $ 343.62\nForma de pago: efectivo",
+    "expected": {
+      "numero_factura": "001-002-000009261",
+      "fecha_emision": "2026-05-08",
+      "ruc_emisor": "1789868330001",
+      "razon_social_emisor": "Tecnosur Ejemplo S.A.S.",
+      "identificacion_comprador": "1702944055001",
+      "nombre_comprador": "Paola Delgado Espinoza",
+      "subtotal": 298.8,
+      "iva": 44.82,
+      "total": 343.62,
+      "forma_pago": "efectivo"
+    },
+    "split": "prueba",
+    "code": "F17"
+  },
+  {
+    "kind": "completa",
+    "input": "FERRETERÍA LOS ANDES FICTICIA S.A.\nRUC: 1716330175001\nDirección matriz: Av. 10 de Agosto N24-15, Quito\n\nFACTURA No. 002-003-000038491\nFecha de emisión: 24/10/2026\n\nCliente: Carmen Delgado Espinoza\nC.I.: 0917749393\n\nCant.  Descripción                          P. unit.     Total\n   1   Servicio de asesoría contable (h)       $ 25.00    $ 25.00\n\nSubtotal 15 %: $ 25.00\nIVA 15 %: $ 3.75\nVALOR TOTAL: $ 28.75\nForma de pago: efectivo",
+    "expected": {
+      "numero_factura": "002-003-000038491",
+      "fecha_emision": "2026-10-24",
+      "ruc_emisor": "1716330175001",
+      "razon_social_emisor": "Ferretería Los Andes Ficticia S.A.",
+      "identificacion_comprador": "0917749393",
+      "nombre_comprador": "Carmen Delgado Espinoza",
+      "subtotal": 25.0,
+      "iva": 3.75,
+      "total": 28.75,
+      "forma_pago": "efectivo"
+    },
+    "split": "prueba",
+    "code": "F18"
+  },
+  {
+    "kind": "completa",
+    "input": "DISTRIBUIDORA PACÍFICO DEMO CÍA. LTDA.\nRUC: 1787419943001\nDirección matriz: Av. 9 de Octubre 1820, Guayaquil\n\nFACTURA No. 002-004-000058824\nFecha de emisión: 25/06/2026\n\nCliente: Carmen Herrera Cárdenas\nC.I.: 0955280308\n\nCant.  Descripción                          P. unit.     Total\n   5   Caja de tornillos                        $ 3,10    $ 15,50\n\nSubtotal 15 %: $ 15,50\nIVA 15 %: $ 2,32\nVALOR TOTAL: $ 17,82\nForma de pago: efectivo",
+    "expected": {
+      "numero_factura": "002-004-000058824",
+      "fecha_emision": "2026-06-25",
+      "ruc_emisor": "1787419943001",
+      "razon_social_emisor": "Distribuidora Pacífico Demo Cía. Ltda.",
+      "identificacion_comprador": "0955280308",
+      "nombre_comprador": "Carmen Herrera Cárdenas",
+      "subtotal": 15.5,
+      "iva": 2.32,
+      "total": 17.82,
+      "forma_pago": "efectivo"
+    },
+    "split": "prueba",
+    "code": "F19"
+  },
+  {
+    "kind": "completa",
+    "input": "FERRETERÍA LOS ANDES FICTICIA S.A.\nRUC: 1732436700001\nDirección matriz: Av. 10 de Agosto N24-15, Quito\n\nFACTURA No. 001-002-000036279\nFecha de emisión: 2026-10-25\n\nCliente: Mateo Guerrero Jaramillo\nC.I.: 0964036436\n\nCant.  Descripción                          P. unit.     Total\n   4   Teclado inalámbrico                     $ 18,60    $ 74,40\n   9   Tóner de impresora                      $ 38,90   $ 350,10\n\nSubtotal 15 %: $ 424,50\nIVA 15 %: $ 63,67\nVALOR TOTAL: $ 488,17\nForma de pago: tarjeta de crédito",
+    "expected": {
+      "numero_factura": "001-002-000036279",
+      "fecha_emision": "2026-10-25",
+      "ruc_emisor": "1732436700001",
+      "razon_social_emisor": "Ferretería Los Andes Ficticia S.A.",
+      "identificacion_comprador": "0964036436",
+      "nombre_comprador": "Mateo Guerrero Jaramillo",
+      "subtotal": 424.5,
+      "iva": 63.67,
+      "total": 488.17,
+      "forma_pago": "tarjeta de crédito"
+    },
+    "split": "prueba",
+    "code": "F20"
+  },
+  {
+    "kind": "incompleta",
+    "input": "TECNOSUR EJEMPLO S.A.S.\nRUC: 1748568041001\nDirección matriz: Av. Universitaria 08-12, Loja\n\nFACTURA No. 002-003-000082755\nFecha de emisión: 11/03/2026\n\nCliente: Paola Andrade Cárdenas\n\nCant.  Descripción                          P. unit.     Total\n   7   Servicio de asesoría contable (h)       $ 25,00   $ 175,00\n   8   Tóner de impresora                      $ 38,90   $ 311,20\n  11   Martillo de acero                        $ 9,40   $ 103,40\n   7   Saco de fertilizante 50 kg              $ 31,20   $ 218,40\n\nSubtotal 15 %: $ 808,00\nIVA 15 %: $ 121,20\nVALOR TOTAL: $ 929,20",
+    "expected": {
+      "numero_factura": "002-003-000082755",
+      "fecha_emision": "2026-03-11",
+      "ruc_emisor": "1748568041001",
+      "razon_social_emisor": "Tecnosur Ejemplo S.A.S.",
+      "identificacion_comprador": null,
+      "nombre_comprador": "Paola Andrade Cárdenas",
+      "subtotal": 808.0,
+      "iva": 121.2,
+      "total": 929.2,
+      "forma_pago": null
+    },
+    "split": "ajuste",
+    "code": "F21"
+  },
+  {
+    "kind": "incompleta",
+    "input": "AGROINSUMOS VALLE VERDE DEMO\nRUC: 1702780200001\nDirección matriz: Vía a Daule km 7, Guayaquil\n\nFACTURA No. 002-005-000050025\n\nC.I.: 0976690411\n\nCant.  Descripción                          P. unit.     Total\n  12   Pan integral                             $ 1.35    $ 16.20\n  12   Resma de papel A4                        $ 4.75    $ 57.00\n\nSubtotal 15 %: $ 73.20\nIVA 15 %: $ 10.98\nVALOR TOTAL: $ 84.18\nForma de pago: tarjeta de débito",
+    "expected": {
+      "numero_factura": "002-005-000050025",
+      "fecha_emision": null,
+      "ruc_emisor": "1702780200001",
+      "razon_social_emisor": "Agroinsumos Valle Verde Demo",
+      "identificacion_comprador": "0976690411",
+      "nombre_comprador": null,
+      "subtotal": 73.2,
+      "iva": 10.98,
+      "total": 84.18,
+      "forma_pago": "tarjeta de débito"
+    },
+    "split": "ajuste",
+    "code": "F22"
+  },
+  {
+    "kind": "incompleta",
+    "input": "AGROINSUMOS VALLE VERDE DEMO\nRUC: 1727282380001\nDirección matriz: Vía a Daule km 7, Guayaquil\n\nFACTURA No. 001-002-000002894\n\nCliente: Andrés Herrera Benítez\n\nCant.  Descripción                          P. unit.     Total\n   8   Impresión a color (ciento)              $ 12.00    $ 96.00\n   8   Saco de fertilizante 50 kg              $ 31.20   $ 249.60\n  11   Servicio de asesoría contable (h)       $ 25.00   $ 275.00\n   7   Caja de tornillos                        $ 3.10    $ 21.70\n\nSubtotal 15 %: $ 642.30\nIVA 15 %: $ 96.34\nVALOR TOTAL: $ 738.64\nForma de pago: tarjeta de débito",
+    "expected": {
+      "numero_factura": "001-002-000002894",
+      "fecha_emision": null,
+      "ruc_emisor": "1727282380001",
+      "razon_social_emisor": "Agroinsumos Valle Verde Demo",
+      "identificacion_comprador": null,
+      "nombre_comprador": "Andrés Herrera Benítez",
+      "subtotal": 642.3,
+      "iva": 96.34,
+      "total": 738.64,
+      "forma_pago": "tarjeta de débito"
+    },
+    "split": "prueba",
+    "code": "F23"
+  },
+  {
+    "kind": "incompleta",
+    "input": "PANADERÍA LA ESPIGA SINTÉTICA\nRUC: 1735201600001\nDirección matriz: Calle Sucre 214, Ambato\n\nFACTURA No. 003-005-000047839\n\nC.I.: 0934193202\n\nCant.  Descripción                          P. unit.     Total\n   7   Saco de fertilizante 50 kg              $ 31,20   $ 218,40\n\nSubtotal 15 %: $ 218,40\nIVA 15 %: $ 32,76\nVALOR TOTAL: $ 251,16\nForma de pago: tarjeta de crédito",
+    "expected": {
+      "numero_factura": "003-005-000047839",
+      "fecha_emision": null,
+      "ruc_emisor": "1735201600001",
+      "razon_social_emisor": "Panadería La Espiga Sintética",
+      "identificacion_comprador": "0934193202",
+      "nombre_comprador": null,
+      "subtotal": 218.4,
+      "iva": 32.76,
+      "total": 251.16,
+      "forma_pago": "tarjeta de crédito"
+    },
+    "split": "prueba",
+    "code": "F24"
+  },
+  {
+    "kind": "incompleta",
+    "input": "PAPELERÍA EL CÓNDOR DE PRUEBA\nRUC: 1751739667001\nDirección matriz: Calle Bolívar 3-45, Cuenca\n\nFACTURA No. 003-004-000090232\n\nCliente: Lucía Cárdenas Guerrero\nC.I.: 0978268446\n\nCant.  Descripción                          P. unit.     Total\n   5   Martillo de acero                        $ 9.40    $ 47.00\n\nSubtotal 15 %: $ 47.00\nIVA 15 %: $ 7.05\nVALOR TOTAL: $ 54.05",
+    "expected": {
+      "numero_factura": "003-004-000090232",
+      "fecha_emision": null,
+      "ruc_emisor": "1751739667001",
+      "razon_social_emisor": "Papelería El Cóndor de Prueba",
+      "identificacion_comprador": "0978268446",
+      "nombre_comprador": "Lucía Cárdenas Guerrero",
+      "subtotal": 47.0,
+      "iva": 7.05,
+      "total": 54.05,
+      "forma_pago": null
+    },
+    "split": "prueba",
+    "code": "F25"
+  },
+  {
+    "kind": "incompleta",
+    "input": "TECNOSUR EJEMPLO S.A.S.\nRUC: 1710333933001\nDirección matriz: Av. Universitaria 08-12, Loja\n\nFACTURA No. 003-004-000037567\nFecha de emisión: 10/02/2026\n\nCliente: Andrés Benítez Guerrero\n\nCant.  Descripción                          P. unit.     Total\n   5   Cable UTP categoría 6 (m)                $ 0,85     $ 4,25\n\nSubtotal 15 %: $ 4,25\nIVA 15 %: $ 0,64\nVALOR TOTAL: $ 4,89",
+    "expected": {
+      "numero_factura": "003-004-000037567",
+      "fecha_emision": "2026-02-10",
+      "ruc_emisor": "1710333933001",
+      "razon_social_emisor": "Tecnosur Ejemplo S.A.S.",
+      "identificacion_comprador": null,
+      "nombre_comprador": "Andrés Benítez Guerrero",
+      "subtotal": 4.25,
+      "iva": 0.64,
+      "total": 4.89,
+      "forma_pago": null
+    },
+    "split": "prueba",
+    "code": "F26"
+  },
+  {
+    "kind": "ambigua",
+    "input": "PANADERÍA LA ESPIGA SINTÉTICA\nRUC: 1710201898001\nDirección matriz: Calle Sucre 214, Ambato\n\nFACTURA No. 002-001-000015521\nFecha de emisión: 20/05/2026\nVence: 20 de junio de 2026\n\nCliente: María Delgado Jaramillo\nRUC: 1715053243001\n\nCant.  Descripción                          P. unit.     Total\n   1   Pan integral                             $ 1.35     $ 1.35\n   4   Cable UTP categoría 6 (m)                $ 0.85     $ 3.40\n   7   Resma de papel A4                        $ 4.75    $ 33.25\n\nSubtotal 15 %: $ 38.00\nIVA 15 %: $ 5.70\nVALOR TOTAL: $ 43.70\nForma de pago: efectivo",
+    "expected": {
+      "numero_factura": "002-001-000015521",
+      "fecha_emision": "2026-05-20",
+      "ruc_emisor": "1710201898001",
+      "razon_social_emisor": "Panadería La Espiga Sintética",
+      "identificacion_comprador": "1715053243001",
+      "nombre_comprador": "María Delgado Jaramillo",
+      "subtotal": 38.0,
+      "iva": 5.7,
+      "total": 43.7,
+      "forma_pago": "efectivo"
+    },
+    "split": "ajuste",
+    "code": "F27"
+  },
+  {
+    "kind": "ambigua",
+    "input": "SERVICIOS CONTABLES MODELO S.A.\nRUC: 1750414358001\nDirección matriz: Av. Amazonas N33-120, Quito\n\nFACTURA No. 002-002-000051243\nFecha de emisión: 2026-02-23\n\nCliente: Paola Ortega Figueroa\nC.I.: 0959158894\n\nCant.  Descripción                          P. unit.     Total\n  11   Caja de tornillos                        $ 3.10    $ 34.10\n   9   Cable UTP categoría 6 (m)                $ 0.85     $ 7.65\n   9   Martillo de acero                        $ 9.40    $ 84.60\n   8   Impresión a color (ciento)              $ 12.00    $ 96.00\n\nSubtotal 15 %: $ 222.35\nDescuento comercial (10 %): -$ 22.23\nSubtotal con descuento: $ 200.12\nIVA 15 %: $ 30.02\nVALOR TOTAL: $ 230.14\nForma de pago: efectivo",
+    "expected": {
+      "numero_factura": "002-002-000051243",
+      "fecha_emision": "2026-02-23",
+      "ruc_emisor": "1750414358001",
+      "razon_social_emisor": "Servicios Contables Modelo S.A.",
+      "identificacion_comprador": "0959158894",
+      "nombre_comprador": "Paola Ortega Figueroa",
+      "subtotal": 200.12,
+      "iva": 30.02,
+      "total": 230.14,
+      "forma_pago": "efectivo"
+    },
+    "split": "prueba",
+    "code": "F28"
+  },
+  {
+    "kind": "ambigua",
+    "input": "IMPRENTA RÁPIDA FICTICIA\nRUC: 1760675211001\nDirección matriz: Calle Larga 7-80, Cuenca\n\nFACTURA No. 001-004-000061823\nFecha de emisión: 26 de abril de 2026\nVence: 26/05/2026\n\nCliente: Valeria Espinoza Benítez\nC.I.: 0990747018\n\nCant.  Descripción                          P. unit.     Total\n   6   Servicio de asesoría contable (h)       $ 25,00   $ 150,00\n\nSubtotal 15 %: $ 150,00\nIVA 15 %: $ 22,50\nVALOR TOTAL: $ 172,50\nForma de pago: efectivo",
+    "expected": {
+      "numero_factura": "001-004-000061823",
+      "fecha_emision": "2026-04-26",
+      "ruc_emisor": "1760675211001",
+      "razon_social_emisor": "Imprenta Rápida Ficticia",
+      "identificacion_comprador": "0990747018",
+      "nombre_comprador": "Valeria Espinoza Benítez",
+      "subtotal": 150.0,
+      "iva": 22.5,
+      "total": 172.5,
+      "forma_pago": "efectivo"
+    },
+    "split": "prueba",
+    "code": "F29"
+  },
+  {
+    "kind": "ambigua",
+    "input": "SERVICIOS CONTABLES MODELO S.A.\nRUC: 1792304461001\nDirección matriz: Av. Amazonas N33-120, Quito\n\nFACTURA No. 001-003-000082661\nFecha de emisión: 2026-01-19\n\nCliente: Carmen Ortega Herrera\nC.I.: 0971049568\n\nCant.  Descripción                          P. unit.     Total\n   5   Pan integral                             $ 1.35     $ 6.75\n   6   Cable UTP categoría 6 (m)                $ 0.85     $ 5.10\n  10   Servicio de asesoría contable (h)       $ 25.00   $ 250.00\n  10   Impresión a color (ciento)              $ 12.00   $ 120.00\n\nSubtotal 15 %: $ 381.85\nDescuento comercial (10 %): -$ 38.19\nSubtotal con descuento: $ 343.66\nIVA 15 %: $ 51.55\nVALOR TOTAL: $ 395.21\nForma de pago: transferencia bancaria",
+    "expected": {
+      "numero_factura": "001-003-000082661",
+      "fecha_emision": "2026-01-19",
+      "ruc_emisor": "1792304461001",
+      "razon_social_emisor": "Servicios Contables Modelo S.A.",
+      "identificacion_comprador": "0971049568",
+      "nombre_comprador": "Carmen Ortega Herrera",
+      "subtotal": 343.66,
+      "iva": 51.55,
+      "total": 395.21,
+      "forma_pago": "transferencia bancaria"
+    },
+    "split": "prueba",
+    "code": "F30"
+  }
+]

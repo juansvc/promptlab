@@ -1,0 +1,13 @@
+{
+  "descripcion": "Prueba de CORS desde un navegador real (Chrome 157) con una clave ficticia. Si el navegador entrega la respuesta (401/400), el proveedor admite llamadas desde otro origen; si el navegador bloquea la llamada, fetch lanza TypeError. No verifica claves reales ni modelos.",
+  "origen": "https://example.com",
+  "navegador": "Chrome/157.0.0.0 (Linux x86_64)",
+  "fecha": "2026-11-11T23:48:00Z",
+  "resultados": [
+    { "proveedor": "OpenAI", "endpoint": "POST /v1/chat/completions", "cors": "admitido", "estado": 401, "ms": 1249, "respuesta": "Incorrect API key provided" },
+    { "proveedor": "Anthropic", "endpoint": "POST /v1/messages con cabecera anthropic-dangerous-direct-browser-access", "cors": "admitido", "estado": 401, "ms": 366, "respuesta": "authentication_error: invalid x-api-key" },
+    { "proveedor": "Anthropic", "endpoint": "POST /v1/messages sin la cabecera", "cors": "bloqueado", "error": "TypeError: Failed to fetch", "ms": 219 },
+    { "proveedor": "Google Gemini", "endpoint": "POST /v1beta/models/gemini-3.1-flash-lite:generateContent", "cors": "admitido", "estado": 400, "ms": 523, "respuesta": "API key not valid" }
+  ],
+  "preflight_anthropic_desde_servidor": "OPTIONS /v1/messages -> 200; access-control-allow-origin: *; access-control-allow-headers incluye x-api-key, anthropic-version y anthropic-dangerous-direct-browser-access"
+}

@@ -1,0 +1,42 @@
+{
+  "proyectos-vacio": {
+    "violaciones": [],
+    "reglasSuperadas": 17,
+    "incompletas": 0
+  },
+  "prompt": {
+    "violaciones": [],
+    "reglasSuperadas": 30,
+    "incompletas": 1
+  },
+  "diff": {
+    "violaciones": [],
+    "reglasSuperadas": 27,
+    "incompletas": 1
+  },
+  "casos": {
+    "violaciones": [],
+    "reglasSuperadas": 24,
+    "incompletas": 0
+  },
+  "ejecutar": {
+    "violaciones": [],
+    "reglasSuperadas": 26,
+    "incompletas": 1
+  },
+  "comparar": {
+    "violaciones": [],
+    "reglasSuperadas": 33,
+    "incompletas": 2
+  },
+  "comparar-detalle": {
+    "violaciones": [],
+    "reglasSuperadas": 34,
+    "incompletas": 2
+  },
+  "ajustes": {
+    "violaciones": [],
+    "reglasSuperadas": 26,
+    "incompletas": 0
+  }
+}
