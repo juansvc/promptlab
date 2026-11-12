@@ -109,6 +109,10 @@ Registrar por tarea: éxito (sí / con ayuda / no), tiempo, dudas expresadas en 
 
 ## 5. Bitácora de desarrollo (plantilla, una fila por tarea terminada)
 
+Repositorio: https://github.com/juansvc/promptlab · Despliegue: https://promptlab-eight-eta.vercel.app
+
 | Fecha | Tarea (tarjeta Kanban) | Objetivo | *Commit* | URL del despliegue | Pruebas | Captura | Observaciones |
 |---|---|---|---|---|---|---|---|
+| 2026-11-11 | Primer incremento funcional: RF01–RF17 | OE3–OE5 | 53a2892 | https://promptlab-eight-eta.vercel.app | 35 unitarias y 7 de extremo a extremo: todas superadas | docs/capturas | Implementación previa al prototipo de bajo nivel |
+| 2026-11-11 | Despliegue en Vercel y comprobación desde producción | OE4 | 53a2892 | https://promptlab-eight-eta.vercel.app | CORS de los tres proveedores (401, 401, 400) y bloqueo de dominios ajenos por la CSP | — | Pendiente: verificación con claves reales |
 | | | | | | | | |

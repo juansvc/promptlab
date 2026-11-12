@@ -5,6 +5,14 @@
   "description": "PromptLab: SPA para construir, versionar y comparar prompts y modelos en una tarea de extracción de datos de facturas (TFE UNIR).",
   "author": "Juan Sebastián Vivanco Castro",
   "license": "UNLICENSED",
+  "homepage": "https://promptlab-eight-eta.vercel.app",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juansvc/promptlab.git"
+  },
+  "bugs": {
+    "url": "https://github.com/juansvc/promptlab/issues"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite",

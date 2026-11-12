@@ -4,6 +4,9 @@ Aplicación web de página única (SPA) para construir, versionar y comparar *pr
 
 Autor: Juan Sebastián Vivanco Castro · Directora: Andrea Vanessa Mory Alvarado
 
+**Aplicación desplegada:** https://promptlab-eight-eta.vercel.app  
+**Demostración sin claves:** https://promptlab-eight-eta.vercel.app/?simulador=rapido (adaptador simulado)
+
 ## Qué hace
 
 1. **Prompt y versiones.** Editor por secciones (rol, contexto, tarea, restricciones, formato de salida, ejemplos y entrada) con variables `{{factura}}`, validación estructural, vista previa de los mensajes y versionado con nota obligatoria y *diff*.
@@ -40,10 +43,11 @@ Añade `?simulador=rapido` a la URL para que el adaptador simulado responda casi
 
 ## Despliegue en Vercel
 
-1. Sube este repositorio a GitHub (público, para el Anexo B).
-2. En vercel.com → *Add New Project* → importa el repositorio. Vercel detecta Vite: comando `npm run build`, salida `dist`.
-3. Abre la URL del despliegue → **Ajustes y claves** → pega tus claves → **Verificación de proveedores** → *Probar llamada* en OpenAI y Anthropic (y Gemini si lo usarás).
-4. Descarga la evidencia (JSON) y haz una captura de la tabla de resultados: es la prueba mínima desde el origen real que exige la semana 1 del plan.
+Despliegue actual: https://promptlab-eight-eta.vercel.app (Vercel, sin variables de entorno). Cada cambio en `main` se publica automáticamente.
+
+1. En vercel.com → *Add New Project* → importa https://github.com/juansvc/promptlab. Vercel detecta Vite: comando `npm run build`, salida `dist`.
+2. Abre https://promptlab-eight-eta.vercel.app → **Ajustes y claves** → pega tus claves → **Verificación de proveedores** → *Probar llamada* en OpenAI y Anthropic (y Gemini si lo usarás).
+3. Descarga la evidencia (JSON) y haz una captura de la tabla de resultados: es la prueba mínima desde el origen real que exige la semana 1 del plan.
 
 ## Estructura
 
